@@ -7,4 +7,6 @@ Como utilizar:
 
 OBS1: Necessário configurar usuário e senha em config.py: SQLALCHEMY_DATABASE_URI = 'mysql://usuario:senha@localhost/login_webrota'
 
-OBS2: a aplicação funciona sem erros
+OBS2: Necessário colocar chave api do maps <script src="https://maps.googleapis.com/maps/api/js?key=SUACHAVE"></script>
+
+OBS3: A aplicação funciona sem erros
