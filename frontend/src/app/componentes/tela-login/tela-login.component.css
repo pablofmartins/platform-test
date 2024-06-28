@@ -1,0 +1,77 @@
+.card_bem_vindo {
+    height: 350px;
+    width: 450px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    margin: 70px auto 15px auto;
+    font-family: "Inter", sans-serif;
+}
+
+.botao_para_pagina_login {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(241, 157, 0);
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.bem_vindo {
+    padding-top: 20px;
+}
+
+.dados_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+label {
+    margin-top: 30px;
+    padding: 5px 0px 5px 0px;
+    align-self: flex-start;
+}
+
+.botao_para_pagina_login {
+    margin-top: 30px;
+}
+
+input {
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.input_cpf_cnpj::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input::placeholder {
+    background-color: rgb(221, 221, 221);
+}
+
+.mensagem_erro {
+    font-size: 12px;
+    padding-top: 5px;
+    color: red;
+}
+
+
+.botao_desabilitado {
+    opacity: 0.8;
+    cursor: not-allowed;
+}

@@ -1,0 +1,19 @@
+<section class="card_bem_vindo">
+    <h1 class="bem_vindo">Seja bem-vindo a WebRota!</h1>
+    <form class="formulario" (ngSubmit)="login()" #loginForm="ngForm">
+        <section class="dados_login">
+            <label for="cpf_cnpj">Usuário</label>
+            <input type="text" placeholder="CPF/CPNJ(somente números)" [(ngModel)]="cpf_cnpj" name="cpf_cnpj"
+                class="input_cpf_cnpj" id="cpf_cnpj" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Senha" [(ngModel)]="senha" name="senha" class="input_senha"
+                required />
+        </section>
+        <div *ngIf="erro_login" class="mensagem_erro">{{ erro_login }}</div>
+        <button class="botao_para_pagina_login" type="submit" [disabled]="!loginForm.form.valid"
+            [ngClass]="{'botao_desabilitado': !loginForm.form.valid}">Login</button>
+    </form>
+</section>
+
+

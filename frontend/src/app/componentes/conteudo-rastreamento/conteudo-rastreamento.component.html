@@ -1,0 +1,28 @@
+<section class="conteudo_rastreamento">
+    <div class="separador"></div>
+    <section class="dados_cliente">
+        <h2 class="titulo_cliente">Cliente</h2>
+        <ul>
+            <li>Nome: {{nome}}</li>
+            <li>CPF: {{cpf_cnpj}}</li>            
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="titulo_rastreamento">Rastreamento de Rota</h2>
+        <section class="formulario_rota">
+            <div class="dados_rota">
+                <label for="rota" class="label_upload">Faça o upload do arquivo de rotas para traçar o seu
+                    trajeto:</label>
+                <input type="file" placeholder="arquivo" (change)="ler_arquivo($event)" class="input_rotas" id="rota">
+                <div *ngIf="erro_arquivo" class="erro_arquivo">{{ erro_arquivo }}</div>
+            </div>
+        </section>
+    </section>
+    
+        <google-map height="800px" width="80%" [center]="posicao_inicial" [zoom]="zoom" class="mapa">
+            <map-marker *ngFor="let posicao of posicoes_no_mapa" [position]="posicao"></map-marker>
+            <map-polyline [path]="rota" [options]="{strokeColor: '#FF0000', strokeOpacity: 1.0, strokeWeight: 2}"></map-polyline>
+        </google-map>
+    
+</section>

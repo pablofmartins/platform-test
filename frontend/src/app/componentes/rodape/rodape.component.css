@@ -1,0 +1,28 @@
+.rodape{
+    height: 150px;
+    width: 100%;
+    background-color:  rgb(36, 36, 36);;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes_sociais{
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.creditos{
+    font-size: 18px;
+}
